@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เลือก Cloud Provider ค่ายไหนดี? AWS vs Azure vs GCP | IT-NEWSDAY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Prompt:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .article-header {
+            padding: 160px 5% 60px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .article-badge {
+            display: inline-block;
+            background: var(--gradient);
+            color: var(--white);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .article-title {
+            font-size: 2.8rem;
+            color: var(--dark-blue);
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .article-meta {
+            color: var(--text-muted);
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .article-meta img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .article-cover {
+            width: 100%;
+            max-width: 1000px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 0 auto 50px;
+            display: block;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .article-body {
+            max-width: 800px;
+            margin: 0 auto 80px;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--text-main);
+            padding: 0 5%;
+        }
+
+        .article-body h2 {
+            color: var(--dark-blue);
+            font-size: 1.8rem;
+            margin: 40px 0 20px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+
+        .article-body ul {
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .share-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        .share-section span {
+            font-weight: 600;
+            color: var(--dark-blue);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-microchip"></i>
+            IT-NEWSDAY
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#home">หน้าแรก</a></li>
+            <li><a href="index.html#articles">ข่าวล่าสุด</a></li>
+            <li><a href="index.html#about">เกี่ยวกับเรา</a></li>
+        </ul>
+        <a href="#" class="btn-primary login-btn">ติดตามข่าวสาร</a>
+        <i class="fa-solid fa-bars mobile-menu-icon"
+            style="display: none; font-size: 1.5rem; cursor: pointer; color: var(--dark-blue);"></i>
+    </nav>
+
+    <main>
+        <header class="article-header">
+            <div class="article-badge">Cloud & Infra</div>
+            <h1 class="article-title">เลือก Cloud Provider ค่ายไหนดี? AWS vs Azure vs GCP</h1>
+            <div class="article-meta">
+                <i class="fa-solid fa-circle-user" style="font-size: 2.2rem; color: #ccc;"></i>
+                <div>
+                    <strong>Cloud Expert</strong><br>
+                    12 ก.พ. 2026 &nbsp;&bull;&nbsp; 8 นาทีในการอ่าน
+                </div>
+            </div>
+        </header>
+
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop"
+            alt="Cloud Computing Concept" class="article-cover">
+
+        <article class="article-body">
+            <p>สำหรับองค์กรที่กำลังก้าวเข้าสู่ยุค Digital Transformation อย่างเต็มรูปแบบ การย้ายระบบขึ้นไปไว้บน "คลาวด์"
+                (Cloud Migration) ถือเป็นก้าวแรกที่สำคัญ แต่คำถามที่ผู้บริหารไอทีทุกคนต้องเจอคือ
+                "เราควรเลือกใช้ค่ายไหน?" ระหว่าง The Big Three อย่าง AWS, Microsoft Azure และ Google Cloud Platform
+                (GCP)</p>
+
+            <h2>Amazon Web Services (AWS) - พี่ใหญ่ใจดี ของครบ</h2>
+            <p>AWS ยังคงครองส่วนแบ่งตลาดอันดับหนึ่งอย่างเหนียวแน่น มีบริการ (Services) ให้เลือกใช้งานมากที่สุด
+                ครอบคลุมตั้งแต่งาน IaaS พื้นฐานอย่าง EC2 ไปจนถึงบริการระดับสูงอย่าง Machine Learning (SageMaker)
+                เหมาะกับ: สตาร์ทอัพที่ต้องการสเกลไว องค์กรขนาดใหญ่ที่มีสถาปัตยกรรมซับซ้อน
+                หรือผู้ที่ต้องการคอมมูนิตี้ช่วยเหลือพึ่งพิงได้บนอินเทอร์เน็ตที่กว้างขวางที่สุด</p>
+
+            <h2>Microsoft Azure - ผสานแนบเนียนกับโลกของ Windows</h2>
+            <p>จุดแข็งสำคัญของ Azure คือการเชื่อมต่อที่ไร้รอยต่อกับบริการและซอฟต์แวร์ฝั่ง Enterprise ของ Microsoft อย่าง
+                Office 365, Active Directory และ Windows Server เหมาะกับ: องค์กรที่มีการใช้งานระบบของ Microsoft อยู่เดิม
+                และต้องการย้ายขึ้นคลาวด์แบบนุ่มนวล (Hybrid Cloud) แถมยังมี Azure OpenAI (ChatGPT)
+                สำหรับผู้ที่ต้องการทำโมเดลภาษาในแอปด้วย</p>
+
+            <h2>Google Cloud Platform (GCP) - เจ้าพ่อ Big Data และ AI</h2>
+            <p>แม้ส่วนแบ่งตลาดจะเป็นอันดับ 3 แต่ GCP โดดเด่นเป็นพิเศษเรื่อง AI, Machine Learning
+                และระบบจัดการข้อมูลขนาดใหญ่ (Big Data Analytics) เครื่องมืออย่าง BigQuery กลายเป็นมาตรฐานที่วิศวกรข้อมูล
+                (Data Engineers) ชื่นชอบ นอกจากนี้โครงข่ายสายไฟเบอร์ของกูเกิลที่เชื่อมทั่วโลกยังให้ความเร็วและ Latency
+                ที่ยอดเยี่ยม เหมาะกับ: ธุรกิจเน้น Data-driven แพลตฟอร์มวิดีโอ การประมวลผลที่มีการเข้าชมสูงระดับโลก
+                ยิ่งคุณสนใจ Kubernetes แน่นอนว่าต้องยกให้กูเกิลผู้คิดค้น</p>
+
+            <h2>บทสรุป: ไม่มีแบรนด์ไหนดีที่สุด มีแต่ "เหมาะสมกับเรา" ที่สุด</h2>
+            <p>ท้ายที่สุด การทำงานแบบ Multi-cloud (ใช้ผสมหลายค่ายเพื่อลดความเสี่ยงหรือหยิบข้อดีของแต่ละระบบ)
+                ก็กำลังเป็นเทรนด์ที่มาแรง แต่ก่อนจะไปถึงจุดนั้น องค์กรต้องประเมินทรัพยากรบุคคล งบประมาณ
+                และทิศทางธุรกิจในอีก 3-5 ปีข้างหน้าเพื่อเลือกคลาวด์แรกที่เหมาะสมที่สุดกับธุรกิจของคุณครับ</p>
+
+            <div class="share-section">
+                <span>แชร์บทความนี้:</span>
+                <div class="social-icons" style="margin-top: 0;">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-line"></i></a>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">
+                    <i class="fa-solid fa-microchip"></i> IT-NEWSDAY
+                </a>
+                <p style="margin-bottom: 20px;">เราคือเว็บไซต์ Blog และแหล่งรวมความรู้ด้านดิจิทัลและเทคโนโลยี
+                    ที่มุ่งมั่นนำเสนอเนื้อหาคุณภาพเพื่อทุกคน</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>หมวดหมู่</h3>
+                <ul class="footer-links">
+                    <li><a href="#"> ข่าวเทคโนโลยี</a></li>
+                    <li><a href="#"> เกร็ดความรู้ไอที</a></li>
+                    <li><a href="#"> รีวิว Gadgets</a></li>
+                    <li><a href="#"> เจาะลึกสาย Dev</a></li>
+                    <li><a href="#"> AI & Machine Learning</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>เกี่ยวกับเรา</h3>
+                <ul class="footer-links">
+                    <li><a href="#"> ประวัติของเรา</a></li>
+                    <li><a href="#"> ติดต่อทีมงาน</a></li>
+                    <li><a href="#"> นโยบายความเป็นส่วนตัว</a></li>
+                    <li><a href="#"> ข้อตกลงการใช้งาน</a></li>
+                    <li><a href="#"> ร่วมงานกับเรา</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 IT-NEWSDAY. All Rights Reserved. Designed for Tech Enthusiasts.</p>
+        </div>
+    </footer>
+    <script>
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+            else navbar.style.boxShadow = '0 2px 15px rgba(0,0,0,0.05)';
+        });
+        document.querySelector('.mobile-menu-icon').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>

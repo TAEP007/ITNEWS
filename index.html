@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-NEWSDAY | อัปเดตข่าวสารและเทคโนโลยี</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Prompt:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-microchip"></i>
+            IT-NEWSDAY
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">หน้าแรก</a></li>
+            <li><a href="#articles">ข่าวล่าสุด</a></li>
+            <li><a href="#about">เกี่ยวกับเรา</a></li>
+        </ul>
+        <a href="#" class="btn-primary login-btn">ติดตามข่าวสาร</a>
+        <!-- Mobile Menu Icon -->
+        <i class="fa-solid fa-bars mobile-menu-icon"
+            style="display: none; font-size: 1.5rem; cursor: pointer; color: var(--dark-blue);"></i>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>ก้าวทันโลกเทคโนโลยี<br>กับ <span>IT-NEWSDAY</span></h1>
+            <p>แหล่งรวมบทความ ข่าวสาร นวัตกรรม และความรู้ด้าน Digital & Technology ที่อัปเดตใหม่ทุกวัน
+                เพื่อให้คุณไม่พลาดทุกเทรนด์ฮิต</p>
+
+
+        </div>
+
+        <div class="wave-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Articles Section -->
+    <section class="articles-section" id="articles">
+        <div class="section-header">
+            <h2>บทความเด่นประจำวัน</h2>
+            <p>อัปเดตความรู้และทริคดีๆ ทางด้านไอทีที่เราคัดสรรมาเพื่อคุณ</p>
+        </div>
+
+        <div class="grid">
+            <!-- Card 1 -->
+            <article class="card" onclick="window.location.href='article-1.html'" title="คลิกเพื่ออ่านบทความ">
+                <div class="badge">AI & Data</div>
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop"
+                        alt="AI Technology">
+                    <div class="card-wave">
+                        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path
+                                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z"
+                                class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-date"><i class="fa-regular fa-calendar"></i> 23 ก.พ. 2026 &nbsp;&bull;&nbsp; 5
+                        นาทีในการอ่าน</div>
+                    <h3 class="card-title">Generative AI จะเปลี่ยนโลกการทำงานในปี 2026 อย่างไร?</h3>
+                    <p class="card-desc">เจาะลึกเทรนด์ AI ล่าสุดที่กำลังเข้ามามีบทบาทในออฟฟิศ
+                        ไม่ว่าจะเป็นผู้ช่วยเขียนโค้ดอัตโนมัติ การสร้างแผนการตลาด หรือการวิเคราะห์ข้อมูลขั้นสูง
+                        ที่จะช่วยประหยัดเวลาการทำงานของคุณไปกว่า 50%
+                        พร้อมข้อควรระวังเรื่องความแม่นยำและลิขสิทธิ์ที่คุณต้องคอยตรวจสอบให้ดี</p>
+                    <div class="card-footer">
+                        <div class="author">โดย <b>Tech Analyst</b></div>
+                        <a href="article-1.html" class="read-more">อ่านต่อ <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card" onclick="window.location.href='article-2.html'" title="คลิกเพื่ออ่านบทความ">
+                <div class="badge">Cybersecurity</div>
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop"
+                        alt="Cybersecurity">
+                    <div class="card-wave">
+                        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path
+                                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z"
+                                class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-date"><i class="fa-regular fa-calendar"></i> 22 ก.พ. 2026 &nbsp;&bull;&nbsp; 8
+                        นาทีในการอ่าน</div>
+                    <h3 class="card-title">5 วิธีป้องกันข้อมูลส่วนตัวรั่วไหล บนโลกโซเชียล</h3>
+                    <p class="card-desc">เรียนรู้วิธีการตั้งค่าความเป็นส่วนตัว
+                        และการสังเกตภัยคุกคามทางไซเบอร์ที่มาในรูปแบบใหม่ ทั้งอีเมลฟิชชิ่งที่เนียนตาขึ้น
+                        หรือโปรแกรมประสงค์ร้ายที่แฝงมากับแอพปลอม เราได้รวบรวม checklist
+                        สำคัญที่คุณสามารถนำไปตั้งค่าความปลอดภัยตามได้ทันที</p>
+                    <div class="card-footer">
+                        <div class="author">โดย <b>SecTeam</b></div>
+                        <a href="article-2.html" class="read-more">อ่านต่อ <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card" onclick="window.location.href='article-3.html'" title="คลิกเพื่ออ่านบทความ">
+                <div class="badge">Web Dev</div>
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop"
+                        alt="Coding">
+                    <div class="card-wave">
+                        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path
+                                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z"
+                                class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-date"><i class="fa-regular fa-calendar"></i> 20 ก.พ. 2026 &nbsp;&bull;&nbsp; 6
+                        นาทีในการอ่าน</div>
+                    <h3 class="card-title">สรุป Framework ที่น่าจับตามอง สำหรับ Web Developer</h3>
+                    <p class="card-desc">อัปเดตเครื่องมือและเฟรมเวิร์กใหม่ๆ
+                        สำหรับนักพัฒนาเว็บไซต์ที่จะช่วยย่นเวลาการเขียนโค้ดของคุณ รีวิวเจาะลึก Framework ยอดนิยม
+                        ว่าตัวไหนตอบโจทย์โปรเจกต์แบบไหน ทั้งฝั่ง Frontend และ Backend
+                        พร้อมวิธีการเริ่มต้นเรียนรู้จากศูนย์</p>
+                    <div class="card-footer">
+                        <div class="author">โดย <b>DevGuru</b></div>
+                        <a href="article-3.html" class="read-more">อ่านต่อ <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card" onclick="window.location.href='article-4.html'" title="คลิกเพื่ออ่านบทความ">
+                <div class="badge">Gadgets</div>
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=600&auto=format&fit=crop"
+                        alt="Laptop">
+                    <div class="card-wave">
+                        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path
+                                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z"
+                                class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-date"><i class="fa-regular fa-calendar"></i> 18 ก.พ. 2026 &nbsp;&bull;&nbsp; 7
+                        นาทีในการอ่าน</div>
+                    <h3 class="card-title">รีวิวแล็ปท็อปสายครีเอเตอร์ รุ่นไหนคุ้มสุดในต้นปีนี้?</h3>
+                    <p class="card-desc">สรุปจุดเด่นและข้อสังเกตของแล็ปท็อปสายทำงานกราฟิกและตัดต่อวิดีโอที่เพิ่งเปิดตัว
+                        เปรียบเทียบสเปคหน้าจอ ความแม่นยำของสี และประสิทธิภาพการระบายความร้อน
+                        เพื่อช่วยให้คุณสามารถสร้างสรรค์ผลงานได้ราบรื่นอย่างไม่มีสะดุด</p>
+                    <div class="card-footer">
+                        <div class="author">โดย <b>Tech Reviewer</b></div>
+                        <a href="article-4.html" class="read-more">อ่านต่อ <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="card" onclick="window.location.href='article-5.html'" title="คลิกเพื่ออ่านบทความ">
+                <div class="badge">Business</div>
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=600&auto=format&fit=crop"
+                        alt="Startup">
+                    <div class="card-wave">
+                        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path
+                                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z"
+                                class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-date"><i class="fa-regular fa-calendar"></i> 15 ก.พ. 2026 &nbsp;&bull;&nbsp; 10
+                        นาทีในการอ่าน</div>
+                    <h3 class="card-title">ถอดรหัสความสำเร็จ 3 สตาร์ทอัพไทยที่ก้าวสู่ระดับโลก</h3>
+                    <p class="card-desc">บทสัมภาษณ์พิเศษจากผู้ก่อตั้งสตาร์ทอัพไทยที่สามารถระดมทุนในระดับซีรีส์ B
+                        ได้สำเร็จ พวกเขามีแนวคิดการแก้ปัญหาอย่างไร
+                        และนำเทคโนโลยีขั้นสูงอะไรมาใช้ในการสเกลธุรกิจให้เติบโตอย่างก้าวกระโดดภายในระยะเวลาไม่กี่ปี</p>
+                    <div class="card-footer">
+                        <div class="author">โดย <b>Business Insider</b></div>
+                        <a href="article-5.html" class="read-more">อ่านต่อ <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="card" onclick="window.location.href='article-6.html'" title="คลิกเพื่ออ่านบทความ">
+                <div class="badge">Cloud & Infra</div>
+                <div class="card-img-container">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop"
+                        alt="Cloud">
+                    <div class="card-wave">
+                        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path
+                                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z"
+                                class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-date"><i class="fa-regular fa-calendar"></i> 12 ก.พ. 2026 &nbsp;&bull;&nbsp; 8
+                        นาทีในการอ่าน</div>
+                    <h3 class="card-title">เลือก Cloud Provider ค่ายไหนดี? AWS vs Azure vs GCP</h3>
+                    <p class="card-desc">สรุปข้อดีข้อเสียของบริการคลาวด์ 3 เจ้าใหญ่แบบหมดเปลือก
+                        สำหรับองค์กรที่กำลังมองหาการทำ Digital Transformation เรานำเสนอการเปรียบเทียบในมุมของราคา
+                        บริการเสริม และความสามารถของ AI ว่าค่ายไหนตอบโจทย์สุด</p>
+                    <div class="card-footer">
+                        <div class="author">โดย <b>Cloud Expert</b></div>
+                        <a href="article-6.html" class="read-more">อ่านต่อ <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="#" class="footer-logo">
+                    <i class="fa-solid fa-microchip"></i> IT-NEWSDAY
+                </a>
+                <p style="margin-bottom: 20px;">เราคือเว็บไซต์ Blog และแหล่งรวมความรู้ด้านดิจิทัลและเทคโนโลยี
+                    ที่มุ่งมั่นนำเสนอเนื้อหาคุณภาพเพื่อทุกคน</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>หมวดหมู่</h3>
+                <ul class="footer-links">
+                    <li><a href="#"> ข่าวเทคโนโลยี</a></li>
+                    <li><a href="#"> เกร็ดความรู้ไอที</a></li>
+                    <li><a href="#"> รีวิว Gadgets</a></li>
+                    <li><a href="#"> เจาะลึกสาย Dev</a></li>
+                    <li><a href="#"> AI & Machine Learning</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>เกี่ยวกับเรา</h3>
+                <ul class="footer-links">
+                    <li><a href="#"> ประวัติของเรา</a></li>
+                    <li><a href="#"> ติดต่อทีมงาน</a></li>
+                    <li><a href="#"> นโยบายความเป็นส่วนตัว</a></li>
+                    <li><a href="#"> ข้อตกลงการใช้งาน</a></li>
+                    <li><a href="#"> ร่วมงานกับเรา</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 IT-NEWSDAY. All Rights Reserved. Designed for Tech Enthusiasts.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.boxShadow = '0 2px 15px rgba(0,0,0,0.05)';
+            }
+        });
+
+        // Mobile menu toggle
+        const menuIcon = document.querySelector('.mobile-menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>
