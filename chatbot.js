@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         windowEl.classList.add('hidden');
     });
 
-    const apiKey = 'AIzaSyBLgvFmdsv2pX1bsOQhp35Xraj3lrXbVUg'; // API Key from user
+    const apiKey = 'AIzaSyBOleZFSg-WJKYZ2tGCydSAk07oaka2swg'; // API Key from user
 
     // Remove markdown symbols nicely
     function formatText(text) {
@@ -70,12 +70,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const data = await response.json();
-            const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "ขออภัยครับ เกิดข้อผิดพลาดในการรับข้อมูล";
+
+            if (!response.ok) {
+                console.error("API Error Details:", data);
+                throw new Error(data.error?.message || `HTTP error! status: ${response.status}`);
+            }
+
+            const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "ขออภัยครับ ไม่มีข้อมูลตอบกลับจากระบบ";
             updateMessage(loadingId, formatText(reply));
 
         } catch (error) {
             console.error('Chatbot API Error:', error);
-            updateMessage(loadingId, 'เกิดข้อผิดพลาดในการเชื่อมต่อ กรุณาลองใหม่อีกครั้ง');
+            // Display error details in the UI for debugging
+            updateMessage(loadingId, `ข้อผิดพลาด: ${error.message}`);
         }
     }
 
