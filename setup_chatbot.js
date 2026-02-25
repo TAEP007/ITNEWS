@@ -1,5 +1,5 @@
 const fs = require('fs');
-const glob = require('glob'); // Not using glob to avoid dependencies if not installed
+// const glob = require('glob'); // Not using glob to avoid dependencies if not installed
 const path = require('path');
 
 const cssCode = `
