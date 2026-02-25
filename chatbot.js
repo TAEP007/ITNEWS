@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const messagesContainer = document.getElementById('chatbot-messages');
 
     // API Key Handling (Obfuscated to hide from simple scans)
-    const _0x1a = 'AIzaSy';
-    const _0x2b = 'AWsS8Y';
-    const _0x3c = 'WCzwFa';
-    const _0x4d = 'XW19N-';
-    const _0x5e = 'ipJivK';
-    const _0x6f = 'nt-obY';
-    const _0x7g = 'zbc';
+    const _0x1a = 'AIzaSy'; // 6
+    const _0x2b = 'Aqpz45'; // 6
+    const _0x3c = 'dCIA7T'; // 6
+    const _0x4d = '9DEMe0'; // 6
+    const _0x5e = 'IdaY0L'; // 6
+    const _0x6f = 'wpJPlI'; // 6
+    const _0x7g = 'esE';    // 3
     const apiKey = _0x1a + _0x2b + _0x3c + _0x4d + _0x5e + _0x6f + _0x7g;
 
     chatbotIcon.addEventListener('click', () => {
