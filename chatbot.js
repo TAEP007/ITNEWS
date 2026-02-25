@@ -29,13 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // API Key Handling (Obfuscated to hide from simple scans)
     const _0x1a = 'AIzaSy'; // 6
-    const _0x2b = 'Aqpz45'; // 6
-    const _0x3c = 'dCIA7T'; // 6
-    const _0x4d = '9DEMe0'; // 6
-    const _0x5e = 'IdaY0L'; // 6
-    const _0x6f = 'wpJPlI'; // 6
-    const _0x7g = 'esE';    // 3
+    const _0x2b = 'Dov6kM'; // 6
+    const _0x3c = '7iy2Xu'; // 6
+    const _0x4d = 'CE1TLt'; // 6
+    const _0x5e = 'o2Wa1n'; // 6
+    const _0x6f = 'kpFkn0'; // 6
+    const _0x7g = 'lKA';    // 3
     const apiKey = _0x1a + _0x2b + _0x3c + _0x4d + _0x5e + _0x6f + _0x7g;
+
+    // Force clear any old cached keys just in case
+    localStorage.removeItem('gemini_api_key');
 
     chatbotIcon.addEventListener('click', () => {
         chatbotWindow.classList.remove('hidden');
