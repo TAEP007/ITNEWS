@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         windowEl.classList.add('hidden');
     });
 
-    const apiKey = 'AIzaSyBOleZFSg-WJKYZ2tGCydSAk07oaka2swg'; // API Key from user
+    const apiKey = 'AIzaSyAG0GXyRVU52W4XYomN_2aZpCfBRoxbj9g'; // API Key from user
 
     // Remove markdown symbols nicely
     function formatText(text) {
